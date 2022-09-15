@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Introduction to Data Science"
+  author: "Moinul Islam"
+  date: "9/16/2022"
+  chapters:
+    - index.qmd
+    - Python.qmd
+    - R.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
