@@ -1,15 +1,13 @@
-# Basic Python
+# Introduction to Python
 
-## Lecture 1: Basic python
-
-### Prerequisites
+## Prerequisites
 
 -   There are three things we need to run the code in this lecture:
     -   Python 3.10 (<https://www.python.org/downloads/>)
     -   PyCharm community or professional (<https://www.jetbrains.com/pycharm/>)
     -   A handful of other packages
 
-### Variables
+## Variables
 
 -   Let's start using a variable
 -   Variable names can contain only letters, numbers and underscores
@@ -23,7 +21,7 @@ print(message)
 
 > Hello world!
 
-### Strings
+## Strings
 
 -   A *string* is a series of characters
 -   In python, anything inside a quotes is considered a string
@@ -43,7 +41,7 @@ print(message)
 
 > I told my friend, "Python is a programming language"
 
-#### Change case of string
+### Change case of string
 
 -   A lower case string can be changed to a title
 
@@ -63,7 +61,7 @@ print(name.upper())
 
 > MOINUL ISLAM
 
-### Numbers
+## Numbers
 
 -   Numbers are used quite often in python
 
@@ -167,7 +165,7 @@ print(ELON_MASK)
 
 > 1000000000000
 
-### Comments
+## Comments
 
 -   In Python, hash (#) indicates a comment.
 -   Anything following a \# mark in your code is ignored by Python
@@ -179,7 +177,7 @@ print("Hello friends")
 
 > Hello friends
 
-### Lists
+## Lists
 
 -   List the elements of a variable
 
@@ -199,7 +197,7 @@ print(bicycles[0])
 
 > trek
 
-#### Neat outcome
+### Neat outcome
 
 -   You can format the element "trek" even more neatly by using title() method
 
@@ -210,7 +208,7 @@ print(bicycles[0].title())
 
 > Trek
 
-#### Print string
+### Print string
 
 -   You can print the strings that you are interested
 -   It starts counting from zero
@@ -231,7 +229,7 @@ print(bicycles[-1])
 
 > specialized
 
-### Functions
+## Functions
 
 ``` python
 bicycles = ["trek", "cannondale", "redline", "specialized"]
@@ -242,6 +240,4 @@ print(message)
 > my first bicycle was a Trek
 
 -   Modifying elements in a list
-
-# Section B: Introduction to R for Data Science
 

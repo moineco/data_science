@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Data Science - 2&nbsp; Basic R</title>
+<title>Introduction to Data Science - 2&nbsp; Introduction to R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic R</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to R</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -163,12 +163,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Python</span></a>
+  <a href="./Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Python</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./R.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic R</span></a>
+  <a href="./R.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to R</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -185,12 +185,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#lecture-2-basic-r" id="toc-lecture-2-basic-r" class="nav-link active" data-scroll-target="#lecture-2-basic-r"><span class="toc-section-number">2.1</span>  Lecture 2: Basic R</a>
-  <ul class="collapse">
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="toc-section-number">2.1.1</span>  Prerequisites</a></li>
-  <li><a href="#use-necessary-libraries" id="toc-use-necessary-libraries" class="nav-link" data-scroll-target="#use-necessary-libraries"><span class="toc-section-number">2.1.2</span>  Use necessary libraries</a></li>
-  </ul></li>
-  <li><a href="#running-r-code" id="toc-running-r-code" class="nav-link" data-scroll-target="#running-r-code"><span class="toc-section-number">2.2</span>  Running R code</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites"><span class="toc-section-number">2.1</span>  Prerequisites</a></li>
+  <li><a href="#use-necessary-libraries" id="toc-use-necessary-libraries" class="nav-link" data-scroll-target="#use-necessary-libraries"><span class="toc-section-number">2.2</span>  Use necessary libraries</a></li>
+  <li><a href="#running-r-code" id="toc-running-r-code" class="nav-link" data-scroll-target="#running-r-code"><span class="toc-section-number">2.3</span>  Running R code</a></li>
   </ul>
 </nav>
     </div>
@@ -199,7 +196,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic R</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to R</span></h1>
 </div>
 
 
@@ -213,10 +210,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="lecture-2-basic-r" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="lecture-2-basic-r"><span class="header-section-number">2.1</span> Lecture 2: Basic R</h2>
-<section id="prerequisites" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">2.1.1</span> Prerequisites</h3>
+<section id="prerequisites" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">2.1</span> Prerequisites</h2>
 <ul>
 <li>There are four things we need to run the code in this lecture:
 <ul>
@@ -227,8 +222,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 </section>
-<section id="use-necessary-libraries" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="use-necessary-libraries"><span class="header-section-number">2.1.2</span> Use necessary libraries</h3>
+<section id="use-necessary-libraries" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="use-necessary-libraries"><span class="header-section-number">2.2</span> Use necessary libraries</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -248,9 +243,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"Lahman"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-</section>
-<section id="running-r-code" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="running-r-code"><span class="header-section-number">2.2</span> Running R code</h2>
+<section id="running-r-code" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="running-r-code"><span class="header-section-number">2.3</span> Running R code</h2>
 
 
 </section>
@@ -357,7 +351,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Python.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Python</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Python</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

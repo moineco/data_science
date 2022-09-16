@@ -1,8 +1,6 @@
-# Basic R
+# Introduction to R
 
-## Lecture 2: Basic R
-
-### Prerequisites
+## Prerequisites
 
 -   There are four things we need to run the code in this lecture:
     -   R (<https://www.r-project.org/>)
@@ -10,7 +8,7 @@
     -   A collection of R packages called the *`tidyverse`* (<https://www.tidyverse.org/>)
     -   A handful of other packages
 
-### Use necessary libraries
+## Use necessary libraries
 
 ```{r}
 library("tidyverse")

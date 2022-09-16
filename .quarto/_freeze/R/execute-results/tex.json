@@ -1,7 +1,7 @@
 {
-  "hash": "84bda9d62ff3e83e593d644b39994d20",
+  "hash": "05d5a080e74607184b77bd8fa8974afc",
   "result": {
-    "markdown": "# Basic R\n\nIn summary, this book has no content whatsoever.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "# Introduction to R\n\n## Prerequisites\n\n-   There are four things we need to run the code in this lecture:\n    -   R (<https://www.r-project.org/>)\n    -   RStudio (<https://www.rstudio.com/products/rstudio/download/>)\n    -   A collection of R packages called the *`tidyverse`* (<https://www.tidyverse.org/>)\n    -   A handful of other packages\n\n## Use necessary libraries\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(\"tidyverse\")\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n-- Attaching packages --------------------------------------- tidyverse 1.3.2 --\nv ggplot2 3.3.6     v purrr   0.3.4\nv tibble  3.1.8     v dplyr   1.0.9\nv tidyr   1.2.0     v stringr 1.4.1\nv readr   2.1.2     v forcats 0.5.2\n-- Conflicts ------------------------------------------ tidyverse_conflicts() --\nx dplyr::filter() masks stats::filter()\nx dplyr::lag()    masks stats::lag()\n```\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(\"nycflights13\")\nlibrary(\"gapminder\")\nlibrary(\"Lahman\")\n```\n:::\n\n\n\n## Running R code",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
