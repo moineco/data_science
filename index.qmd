@@ -1,5 +1,5 @@
 # Preface {.unnumbered}
 
-This book contains the basic Python and R programming skills to learn data science. You can dive into the amazing data science world by using Python and R. Learn how to effectively analyze and visualize your data. No coding experience or skills needed. Data Science is about data gathering, analysis and decision-making. Data Science is used in many industries in the world today, e.g. banking, consultancy, healthcare, and manufacturing. Data science is not a one-step process such that will get to learned it in a short time. It’s passes from many stages and every element is important. One should always follow the proper steps to reach the ladder. Every step has its value and it counts in your model.
+This book contains the basic R and Python skills to learn data science. You can dive into the amazing data science world by using R and Python. Learn how to effectively analyze and visualize your data. No coding experience or skills needed. Data Science is about data gathering, analysis and decision-making. Data Science is used in many industries in the world today, e.g. banking, consultancy, healthcare, and manufacturing. Data science is not a one-step process such that will get to learned it in a short time. It’s passes from many stages and every element is important. One should always follow the proper steps to reach the ladder. Every step has its value and it counts in your model.
 
-![Data Science](figures/1.jpeg){height=70%, width=70%}
+![](figures/1.jpeg){height=70%, width=70%}

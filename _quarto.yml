@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "Data Science with Python and R"
+  title: "Data Science with R and Python"
   author: "Moinul Islam"
   date: "9/15/2022"
   chapters:
