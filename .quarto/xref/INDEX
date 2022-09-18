@@ -10,5 +10,50 @@
   },
   "references.qmd": {
     "references.html": "7073e4c2"
+  },
+  "lecture_1.qmd": {
+    "lecture_1.html": "5bef584c"
+  },
+  "lecture_2.qmd": {
+    "lecture_2.html": "a50e47fa"
+  },
+  "lecture_3.qmd": {
+    "lecture_3.html": "32908632"
+  },
+  "lecture_4.qmd": {
+    "lecture_4.html": "36e02ca7"
+  },
+  "lecture_5.qmd": {
+    "lecture_5.html": "d0c81140"
+  },
+  "lecture_6.qmd": {
+    "lecture_6.html": "3afd5d90"
+  },
+  "lecture_7.qmd": {
+    "lecture_7.html": "d1a8b8b2"
+  },
+  "lecture_8.qmd": {
+    "lecture_8.html": "187fa08c"
+  },
+  "lecture_9.qmd": {
+    "lecture_9.html": "51a7c1c3"
+  },
+  "lecture_10.qmd": {
+    "lecture_10.html": "db195f63"
+  },
+  "lecture_11.qmd": {
+    "lecture_11.html": "c4ef1cc9"
+  },
+  "lecture_12.qmd": {
+    "lecture_12.html": "0e668705"
+  },
+  "lecture_13.qmd": {
+    "lecture_13.html": "ee056ebe"
+  },
+  "lecture_14.qmd": {
+    "lecture_14.html": "6ee51fd3"
+  },
+  "lecture_15.qmd": {
+    "lecture_15.html": "f4e7fdf0"
   }
 }

@@ -2,78 +2,743 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introduction to Data Science",
+    "title": "Data Science with Python and R",
     "section": "",
-    "text": "This is a data science book for beginners. This book contains the basic Python and R programming skills to start your career as a data scientist. You can dive into the amazing data science world by using Python and R. Learn how to effectively analyze and visualize your data. No coding experience or skills needed. Data Science is about data gathering, analysis and decision-making. Data Science is used in many industries in the world today, e.g. banking, consultancy, healthcare, and manufacturing. Data science is not a one-step process such that will get to learned it in a short time. It’s passes from many stages and every element is important. One should always follow the proper steps to reach the ladder. Every step has its value and it counts in your model."
+    "text": "This book contains the basic Python and R programming skills to learn data science. You can dive into the amazing data science world by using Python and R. Learn how to effectively analyze and visualize your data. No coding experience or skills needed. Data Science is about data gathering, analysis and decision-making. Data Science is used in many industries in the world today, e.g. banking, consultancy, healthcare, and manufacturing. Data science is not a one-step process such that will get to learned it in a short time. It’s passes from many stages and every element is important. One should always follow the proper steps to reach the ladder. Every step has its value and it counts in your model.\n\n\n\nData Science"
   },
   {
-    "objectID": "Python.html",
-    "href": "Python.html",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html",
+    "href": "lecture_1.html",
+    "title": "1  Basic Python",
     "section": "",
     "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
   },
   {
-    "objectID": "Python.html#variables",
-    "href": "Python.html#variables",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#variables",
+    "href": "lecture_1.html#variables",
+    "title": "1  Basic Python",
     "section": "1.2 Variables",
     "text": "1.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
   },
   {
-    "objectID": "Python.html#strings",
-    "href": "Python.html#strings",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#strings",
+    "href": "lecture_1.html#strings",
+    "title": "1  Basic Python",
     "section": "1.3 Strings",
     "text": "1.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n1.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
   },
   {
-    "objectID": "Python.html#numbers",
-    "href": "Python.html#numbers",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#numbers",
+    "href": "lecture_1.html#numbers",
+    "title": "1  Basic Python",
     "section": "1.4 Numbers",
     "text": "1.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
   },
   {
-    "objectID": "Python.html#comments",
-    "href": "Python.html#comments",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#comments",
+    "href": "lecture_1.html#comments",
+    "title": "1  Basic Python",
     "section": "1.5 Comments",
     "text": "1.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
   },
   {
-    "objectID": "Python.html#lists",
-    "href": "Python.html#lists",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#lists",
+    "href": "lecture_1.html#lists",
+    "title": "1  Basic Python",
     "section": "1.6 Lists",
     "text": "1.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n1.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n1.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
   },
   {
-    "objectID": "Python.html#functions",
-    "href": "Python.html#functions",
-    "title": "1  Introduction to Python",
+    "objectID": "lecture_1.html#functions",
+    "href": "lecture_1.html#functions",
+    "title": "1  Basic Python",
     "section": "1.7 Functions",
     "text": "1.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
   },
   {
-    "objectID": "R.html",
-    "href": "R.html",
-    "title": "2  Introduction to R",
+    "objectID": "lecture_2.html",
+    "href": "lecture_2.html",
+    "title": "2  Introduction to Python",
     "section": "",
-    "text": "There are four things we need to run the code in this lecture:\n\nR (https://www.r-project.org/)\nRStudio (https://www.rstudio.com/products/rstudio/download/)\nA collection of R packages called the tidyverse (https://www.tidyverse.org/)\nA handful of other packages"
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
   },
   {
-    "objectID": "R.html#use-necessary-libraries",
-    "href": "R.html#use-necessary-libraries",
-    "title": "2  Introduction to R",
-    "section": "2.2 Use necessary libraries",
-    "text": "2.2 Use necessary libraries\n\nlibrary(\"tidyverse\")\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.3.6     ✔ purrr   0.3.4\n✔ tibble  3.1.8     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.1\n✔ readr   2.1.2     ✔ forcats 0.5.2\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\n\n\nlibrary(\"nycflights13\")\nlibrary(\"gapminder\")\nlibrary(\"Lahman\")"
+    "objectID": "lecture_2.html#variables",
+    "href": "lecture_2.html#variables",
+    "title": "2  Introduction to Python",
+    "section": "2.2 Variables",
+    "text": "2.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
   },
   {
-    "objectID": "R.html#running-r-code",
-    "href": "R.html#running-r-code",
-    "title": "2  Introduction to R",
-    "section": "2.3 Running R code",
-    "text": "2.3 Running R code"
+    "objectID": "lecture_2.html#strings",
+    "href": "lecture_2.html#strings",
+    "title": "2  Introduction to Python",
+    "section": "2.3 Strings",
+    "text": "2.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n2.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_2.html#numbers",
+    "href": "lecture_2.html#numbers",
+    "title": "2  Introduction to Python",
+    "section": "2.4 Numbers",
+    "text": "2.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_2.html#comments",
+    "href": "lecture_2.html#comments",
+    "title": "2  Introduction to Python",
+    "section": "2.5 Comments",
+    "text": "2.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_2.html#lists",
+    "href": "lecture_2.html#lists",
+    "title": "2  Introduction to Python",
+    "section": "2.6 Lists",
+    "text": "2.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n2.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n2.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_2.html#functions",
+    "href": "lecture_2.html#functions",
+    "title": "2  Introduction to Python",
+    "section": "2.7 Functions",
+    "text": "2.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_3.html",
+    "href": "lecture_3.html",
+    "title": "3  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_3.html#variables",
+    "href": "lecture_3.html#variables",
+    "title": "3  Introduction to Python",
+    "section": "3.2 Variables",
+    "text": "3.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_3.html#strings",
+    "href": "lecture_3.html#strings",
+    "title": "3  Introduction to Python",
+    "section": "3.3 Strings",
+    "text": "3.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n3.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_3.html#numbers",
+    "href": "lecture_3.html#numbers",
+    "title": "3  Introduction to Python",
+    "section": "3.4 Numbers",
+    "text": "3.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_3.html#comments",
+    "href": "lecture_3.html#comments",
+    "title": "3  Introduction to Python",
+    "section": "3.5 Comments",
+    "text": "3.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_3.html#lists",
+    "href": "lecture_3.html#lists",
+    "title": "3  Introduction to Python",
+    "section": "3.6 Lists",
+    "text": "3.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n3.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n3.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_3.html#functions",
+    "href": "lecture_3.html#functions",
+    "title": "3  Introduction to Python",
+    "section": "3.7 Functions",
+    "text": "3.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_4.html",
+    "href": "lecture_4.html",
+    "title": "4  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_4.html#variables",
+    "href": "lecture_4.html#variables",
+    "title": "4  Introduction to Python",
+    "section": "4.2 Variables",
+    "text": "4.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_4.html#strings",
+    "href": "lecture_4.html#strings",
+    "title": "4  Introduction to Python",
+    "section": "4.3 Strings",
+    "text": "4.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n4.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_4.html#numbers",
+    "href": "lecture_4.html#numbers",
+    "title": "4  Introduction to Python",
+    "section": "4.4 Numbers",
+    "text": "4.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_4.html#comments",
+    "href": "lecture_4.html#comments",
+    "title": "4  Introduction to Python",
+    "section": "4.5 Comments",
+    "text": "4.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_4.html#lists",
+    "href": "lecture_4.html#lists",
+    "title": "4  Introduction to Python",
+    "section": "4.6 Lists",
+    "text": "4.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n4.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n4.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_4.html#functions",
+    "href": "lecture_4.html#functions",
+    "title": "4  Introduction to Python",
+    "section": "4.7 Functions",
+    "text": "4.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_5.html",
+    "href": "lecture_5.html",
+    "title": "5  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_5.html#variables",
+    "href": "lecture_5.html#variables",
+    "title": "5  Introduction to Python",
+    "section": "5.2 Variables",
+    "text": "5.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_5.html#strings",
+    "href": "lecture_5.html#strings",
+    "title": "5  Introduction to Python",
+    "section": "5.3 Strings",
+    "text": "5.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n5.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_5.html#numbers",
+    "href": "lecture_5.html#numbers",
+    "title": "5  Introduction to Python",
+    "section": "5.4 Numbers",
+    "text": "5.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_5.html#comments",
+    "href": "lecture_5.html#comments",
+    "title": "5  Introduction to Python",
+    "section": "5.5 Comments",
+    "text": "5.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_5.html#lists",
+    "href": "lecture_5.html#lists",
+    "title": "5  Introduction to Python",
+    "section": "5.6 Lists",
+    "text": "5.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n5.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n5.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_5.html#functions",
+    "href": "lecture_5.html#functions",
+    "title": "5  Introduction to Python",
+    "section": "5.7 Functions",
+    "text": "5.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_6.html",
+    "href": "lecture_6.html",
+    "title": "6  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_6.html#variables",
+    "href": "lecture_6.html#variables",
+    "title": "6  Introduction to Python",
+    "section": "6.2 Variables",
+    "text": "6.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_6.html#strings",
+    "href": "lecture_6.html#strings",
+    "title": "6  Introduction to Python",
+    "section": "6.3 Strings",
+    "text": "6.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n6.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_6.html#numbers",
+    "href": "lecture_6.html#numbers",
+    "title": "6  Introduction to Python",
+    "section": "6.4 Numbers",
+    "text": "6.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_6.html#comments",
+    "href": "lecture_6.html#comments",
+    "title": "6  Introduction to Python",
+    "section": "6.5 Comments",
+    "text": "6.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_6.html#lists",
+    "href": "lecture_6.html#lists",
+    "title": "6  Introduction to Python",
+    "section": "6.6 Lists",
+    "text": "6.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n6.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n6.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_6.html#functions",
+    "href": "lecture_6.html#functions",
+    "title": "6  Introduction to Python",
+    "section": "6.7 Functions",
+    "text": "6.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_7.html",
+    "href": "lecture_7.html",
+    "title": "7  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_7.html#variables",
+    "href": "lecture_7.html#variables",
+    "title": "7  Introduction to Python",
+    "section": "7.2 Variables",
+    "text": "7.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_7.html#strings",
+    "href": "lecture_7.html#strings",
+    "title": "7  Introduction to Python",
+    "section": "7.3 Strings",
+    "text": "7.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n7.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_7.html#numbers",
+    "href": "lecture_7.html#numbers",
+    "title": "7  Introduction to Python",
+    "section": "7.4 Numbers",
+    "text": "7.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_7.html#comments",
+    "href": "lecture_7.html#comments",
+    "title": "7  Introduction to Python",
+    "section": "7.5 Comments",
+    "text": "7.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_7.html#lists",
+    "href": "lecture_7.html#lists",
+    "title": "7  Introduction to Python",
+    "section": "7.6 Lists",
+    "text": "7.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n7.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n7.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_7.html#functions",
+    "href": "lecture_7.html#functions",
+    "title": "7  Introduction to Python",
+    "section": "7.7 Functions",
+    "text": "7.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_8.html",
+    "href": "lecture_8.html",
+    "title": "8  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_8.html#variables",
+    "href": "lecture_8.html#variables",
+    "title": "8  Introduction to Python",
+    "section": "8.2 Variables",
+    "text": "8.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_8.html#strings",
+    "href": "lecture_8.html#strings",
+    "title": "8  Introduction to Python",
+    "section": "8.3 Strings",
+    "text": "8.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n8.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_8.html#numbers",
+    "href": "lecture_8.html#numbers",
+    "title": "8  Introduction to Python",
+    "section": "8.4 Numbers",
+    "text": "8.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_8.html#comments",
+    "href": "lecture_8.html#comments",
+    "title": "8  Introduction to Python",
+    "section": "8.5 Comments",
+    "text": "8.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_8.html#lists",
+    "href": "lecture_8.html#lists",
+    "title": "8  Introduction to Python",
+    "section": "8.6 Lists",
+    "text": "8.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n8.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n8.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_8.html#functions",
+    "href": "lecture_8.html#functions",
+    "title": "8  Introduction to Python",
+    "section": "8.7 Functions",
+    "text": "8.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_9.html",
+    "href": "lecture_9.html",
+    "title": "9  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_9.html#variables",
+    "href": "lecture_9.html#variables",
+    "title": "9  Introduction to Python",
+    "section": "9.2 Variables",
+    "text": "9.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_9.html#strings",
+    "href": "lecture_9.html#strings",
+    "title": "9  Introduction to Python",
+    "section": "9.3 Strings",
+    "text": "9.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n9.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_9.html#numbers",
+    "href": "lecture_9.html#numbers",
+    "title": "9  Introduction to Python",
+    "section": "9.4 Numbers",
+    "text": "9.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_9.html#comments",
+    "href": "lecture_9.html#comments",
+    "title": "9  Introduction to Python",
+    "section": "9.5 Comments",
+    "text": "9.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_9.html#lists",
+    "href": "lecture_9.html#lists",
+    "title": "9  Introduction to Python",
+    "section": "9.6 Lists",
+    "text": "9.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n9.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n9.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_9.html#functions",
+    "href": "lecture_9.html#functions",
+    "title": "9  Introduction to Python",
+    "section": "9.7 Functions",
+    "text": "9.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_10.html",
+    "href": "lecture_10.html",
+    "title": "10  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_10.html#variables",
+    "href": "lecture_10.html#variables",
+    "title": "10  Introduction to Python",
+    "section": "10.2 Variables",
+    "text": "10.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_10.html#strings",
+    "href": "lecture_10.html#strings",
+    "title": "10  Introduction to Python",
+    "section": "10.3 Strings",
+    "text": "10.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n10.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_10.html#numbers",
+    "href": "lecture_10.html#numbers",
+    "title": "10  Introduction to Python",
+    "section": "10.4 Numbers",
+    "text": "10.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_10.html#comments",
+    "href": "lecture_10.html#comments",
+    "title": "10  Introduction to Python",
+    "section": "10.5 Comments",
+    "text": "10.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_10.html#lists",
+    "href": "lecture_10.html#lists",
+    "title": "10  Introduction to Python",
+    "section": "10.6 Lists",
+    "text": "10.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n10.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n10.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_10.html#functions",
+    "href": "lecture_10.html#functions",
+    "title": "10  Introduction to Python",
+    "section": "10.7 Functions",
+    "text": "10.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_11.html",
+    "href": "lecture_11.html",
+    "title": "11  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_11.html#variables",
+    "href": "lecture_11.html#variables",
+    "title": "11  Introduction to Python",
+    "section": "11.2 Variables",
+    "text": "11.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_11.html#strings",
+    "href": "lecture_11.html#strings",
+    "title": "11  Introduction to Python",
+    "section": "11.3 Strings",
+    "text": "11.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n11.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_11.html#numbers",
+    "href": "lecture_11.html#numbers",
+    "title": "11  Introduction to Python",
+    "section": "11.4 Numbers",
+    "text": "11.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_11.html#comments",
+    "href": "lecture_11.html#comments",
+    "title": "11  Introduction to Python",
+    "section": "11.5 Comments",
+    "text": "11.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_11.html#lists",
+    "href": "lecture_11.html#lists",
+    "title": "11  Introduction to Python",
+    "section": "11.6 Lists",
+    "text": "11.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n11.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n11.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_11.html#functions",
+    "href": "lecture_11.html#functions",
+    "title": "11  Introduction to Python",
+    "section": "11.7 Functions",
+    "text": "11.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_12.html",
+    "href": "lecture_12.html",
+    "title": "12  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_12.html#variables",
+    "href": "lecture_12.html#variables",
+    "title": "12  Introduction to Python",
+    "section": "12.2 Variables",
+    "text": "12.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_12.html#strings",
+    "href": "lecture_12.html#strings",
+    "title": "12  Introduction to Python",
+    "section": "12.3 Strings",
+    "text": "12.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n12.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_12.html#numbers",
+    "href": "lecture_12.html#numbers",
+    "title": "12  Introduction to Python",
+    "section": "12.4 Numbers",
+    "text": "12.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_12.html#comments",
+    "href": "lecture_12.html#comments",
+    "title": "12  Introduction to Python",
+    "section": "12.5 Comments",
+    "text": "12.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_12.html#lists",
+    "href": "lecture_12.html#lists",
+    "title": "12  Introduction to Python",
+    "section": "12.6 Lists",
+    "text": "12.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n12.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n12.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_12.html#functions",
+    "href": "lecture_12.html#functions",
+    "title": "12  Introduction to Python",
+    "section": "12.7 Functions",
+    "text": "12.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_13.html",
+    "href": "lecture_13.html",
+    "title": "13  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_13.html#variables",
+    "href": "lecture_13.html#variables",
+    "title": "13  Introduction to Python",
+    "section": "13.2 Variables",
+    "text": "13.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_13.html#strings",
+    "href": "lecture_13.html#strings",
+    "title": "13  Introduction to Python",
+    "section": "13.3 Strings",
+    "text": "13.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n13.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_13.html#numbers",
+    "href": "lecture_13.html#numbers",
+    "title": "13  Introduction to Python",
+    "section": "13.4 Numbers",
+    "text": "13.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_13.html#comments",
+    "href": "lecture_13.html#comments",
+    "title": "13  Introduction to Python",
+    "section": "13.5 Comments",
+    "text": "13.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_13.html#lists",
+    "href": "lecture_13.html#lists",
+    "title": "13  Introduction to Python",
+    "section": "13.6 Lists",
+    "text": "13.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n13.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n13.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_13.html#functions",
+    "href": "lecture_13.html#functions",
+    "title": "13  Introduction to Python",
+    "section": "13.7 Functions",
+    "text": "13.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_14.html",
+    "href": "lecture_14.html",
+    "title": "14  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_14.html#variables",
+    "href": "lecture_14.html#variables",
+    "title": "14  Introduction to Python",
+    "section": "14.2 Variables",
+    "text": "14.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_14.html#strings",
+    "href": "lecture_14.html#strings",
+    "title": "14  Introduction to Python",
+    "section": "14.3 Strings",
+    "text": "14.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n14.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_14.html#numbers",
+    "href": "lecture_14.html#numbers",
+    "title": "14  Introduction to Python",
+    "section": "14.4 Numbers",
+    "text": "14.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_14.html#comments",
+    "href": "lecture_14.html#comments",
+    "title": "14  Introduction to Python",
+    "section": "14.5 Comments",
+    "text": "14.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_14.html#lists",
+    "href": "lecture_14.html#lists",
+    "title": "14  Introduction to Python",
+    "section": "14.6 Lists",
+    "text": "14.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n14.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n14.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_14.html#functions",
+    "href": "lecture_14.html#functions",
+    "title": "14  Introduction to Python",
+    "section": "14.7 Functions",
+    "text": "14.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
+  },
+  {
+    "objectID": "lecture_15.html",
+    "href": "lecture_15.html",
+    "title": "15  Introduction to Python",
+    "section": "",
+    "text": "There are three things we need to run the code in this lecture:\n\nPython 3.10 (https://www.python.org/downloads/)\nPyCharm community or professional (https://www.jetbrains.com/pycharm/)\nA handful of other packages"
+  },
+  {
+    "objectID": "lecture_15.html#variables",
+    "href": "lecture_15.html#variables",
+    "title": "15  Introduction to Python",
+    "section": "15.2 Variables",
+    "text": "15.2 Variables\n\nLet’s start using a variable\nVariable names can contain only letters, numbers and underscores\nSpace are not allowed in variable name\nVariables name should be short and descriptive\n\nmessage = \"Hello world!\"\nprint(message)\n\nHello world!"
+  },
+  {
+    "objectID": "lecture_15.html#strings",
+    "href": "lecture_15.html#strings",
+    "title": "15  Introduction to Python",
+    "section": "15.3 Strings",
+    "text": "15.3 Strings\n\nA string is a series of characters\nIn python, anything inside a quotes is considered a string\nWe can use single or double quotes around the strings\n\nmessage = \"Python is a programming language\"\nprint(message)\n\nPython is a programming language\n\nmessage = 'I told my friend, \"Python is a programming language\"'\nprint(message)\n\nI told my friend, “Python is a programming language”\n\n\n15.3.1 Change case of string\n\nA lower case string can be changed to a title\n\nname = \"moinul islam\"\nprint(name.title())\n\nMoinul Islam\n\n\nWe can also change the string to all upper or all lower\n\nname = \"moinul islam\"\nprint(name.upper())\n\nMOINUL ISLAM"
+  },
+  {
+    "objectID": "lecture_15.html#numbers",
+    "href": "lecture_15.html#numbers",
+    "title": "15  Introduction to Python",
+    "section": "15.4 Numbers",
+    "text": "15.4 Numbers\n\nNumbers are used quite often in python\n\nIntegers: We can add (+), multiply (*), exponent (**), and divide (/) integers in Python\n\nprint(2+3)\n\n5\n\nprint(3-2)\n\n1\n\nprint(2*3)\n\n6\n\nprint(3**3)\n\n27\n\nprint(3/2)\n\n1.5\n\n\nPython supports the order of operation too.\n\nprint(2 + 3*4)\n\n14\n\nprint((2+3)*4)\n\n20\n\n\nFloats: Python calls any number with a decimal point a float\n\nprint(2*0.2)\n\n0.4\n\n\nIntegers and floats: When we divide two numbers, even if they are integers, you will always get a float\n\nprint(4/2)\n\n2.0\n\nUnderscore in numbers\n\nWhen you are writing long numbers, you can group digits using underscores\n\nuniverse_age = 14_000_000_000\nprint(universe_age)\n\n14000000000\n\nMultiple assignments\n\nWe can assign the value to more than one variables using just a single line\n\nx, y, z = 12, 3, 5\nprint(x, y, z)\nprint(z)\n\n12 3 5\n\n\n5\n\nConstants\n\nA constant is a variable whose value stay the same throughout the life of a program.\nPython does not have built in command for constant\nHowever, a variable name with all capital letters treated as constant\n\n\nELON_MASK  = 1_000_000_000_000\nprint(ELON_MASK)\n\n1000000000000"
+  },
+  {
+    "objectID": "lecture_15.html#comments",
+    "href": "lecture_15.html#comments",
+    "title": "15  Introduction to Python",
+    "section": "15.5 Comments",
+    "text": "15.5 Comments\n\nIn Python, hash (#) indicates a comment.\nAnything following a # mark in your code is ignored by Python\n\n# Say hello to your friends\nprint(\"Hello friends\")\n\nHello friends"
+  },
+  {
+    "objectID": "lecture_15.html#lists",
+    "href": "lecture_15.html#lists",
+    "title": "15  Introduction to Python",
+    "section": "15.6 Lists",
+    "text": "15.6 Lists\n\nList the elements of a variable\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles)\n\n[‘trek’, ‘cannondale’, ‘redline’, ‘specialized’]\n\n\nAccess an element from a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0])\n\ntrek\n\n\n15.6.1 Neat outcome\n\nYou can format the element “trek” even more neatly by using title() method\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[0].title())\n\nTrek\n\n\n\n15.6.2 Print string\n\nYou can print the strings that you are interested\nIt starts counting from zero\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[1])\n\ncannondale\n\n\nPython has special syntax to call the last item of a list\n\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nprint(bicycles[-1])\n\nspecialized"
+  },
+  {
+    "objectID": "lecture_15.html#functions",
+    "href": "lecture_15.html#functions",
+    "title": "15  Introduction to Python",
+    "section": "15.7 Functions",
+    "text": "15.7 Functions\nbicycles = [\"trek\", \"cannondale\", \"redline\", \"specialized\"]\nmessage = f\"my first bicycle was a {bicycles[0].title()}\"\nprint(message)\n\nmy first bicycle was a Trek\n\n\nModifying elements in a list"
   }
 ]
